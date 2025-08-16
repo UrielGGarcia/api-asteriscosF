@@ -11,6 +11,7 @@ app.get("/en-asteriscos/:nombre", (req, res) => {
     res.send(respuesta);
 });
 
-app.listen(PORT, () => {
-    console.log(`API corriendo en puerto http://localhost:${PORT}`);
-});
+
+
+// Exportar el handler para Vercel
+module.exports = app;
